@@ -217,6 +217,11 @@
                 updateHeight();
             });
 
+            $('.col-lg-12 .panel .panel-body').on('click', function() {
+                var component = $(this).parent('.panel');
+                $(component).find('.panel-heading').html('click');
+            });
+
             function updateHeight() {
                 var h1 = ($('#newheight').height() - 37) + 'px';
                 var h2 =  ($('#newheight').height() - 79 ) + 'px';
